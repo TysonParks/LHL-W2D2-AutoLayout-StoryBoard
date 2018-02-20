@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,18 +16,18 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zcF-Gh-ha1" userLabel="purpleBox">
-                                <rect key="frame" x="126.5" y="597" width="228.5" height="50"/>
+                                <rect key="frame" x="240" y="305" width="407" height="50"/>
                                 <color key="backgroundColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="wYE-Xr-G85"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJn-wt-GPy" userLabel="redBox">
-                                <rect key="frame" x="211" y="40" width="144" height="46"/>
+                                <rect key="frame" x="503" y="20" width="144" height="46"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Tn-fX-b8O" userLabel="orangeBoxOne">
                                         <rect key="frame" x="8" y="8" width="70" height="30"/>
@@ -61,10 +61,40 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wz2-Hs-G62" userLabel="invisibleContainer">
-                                <rect key="frame" x="162.5" y="126.5" width="50" height="434"/>
+                                <rect key="frame" x="308.5" y="47" width="50" height="281"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pvK-U7-3Xc" userLabel="blueBoxTop">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="IKc-jm-0sp"/>
+                                            <constraint firstAttribute="width" constant="50" id="geg-4Q-niq"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" restorationIdentifier="blueBoxMiddle" translatesAutoresizingMaskIntoConstraints="NO" id="hXY-Ll-bU3" userLabel="blueBoxMiddle">
+                                        <rect key="frame" x="0.0" y="115.5" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="rUi-Mg-jmo"/>
+                                            <constraint firstAttribute="height" constant="50" id="sIc-6W-9Ku"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Yu-Vs-xgE" userLabel="blueBoxBottom">
+                                        <rect key="frame" x="0.0" y="231" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="NaT-6l-Vnw"/>
+                                            <constraint firstAttribute="width" constant="50" id="nq1-Nf-zie"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="pvK-U7-3Xc" firstAttribute="leading" secondItem="Wz2-Hs-G62" secondAttribute="leading" id="29Q-RI-znq"/>
+                                    <constraint firstItem="hXY-Ll-bU3" firstAttribute="centerY" secondItem="Wz2-Hs-G62" secondAttribute="centerY" id="6mk-P2-KbC"/>
+                                    <constraint firstAttribute="bottom" secondItem="3Yu-Vs-xgE" secondAttribute="bottom" id="I2w-uB-p77"/>
                                     <constraint firstAttribute="width" constant="50" id="Kqp-BB-Eer"/>
+                                    <constraint firstItem="pvK-U7-3Xc" firstAttribute="top" secondItem="Wz2-Hs-G62" secondAttribute="top" id="lVe-Gd-9LK"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -77,7 +107,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zcF-Gh-ha1" secondAttribute="bottom" constant="20" id="Zo9-1W-jkD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zcF-Gh-ha1" secondAttribute="trailing" constant="20" id="cfG-I6-oel"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zcF-Gh-ha1" secondAttribute="bottom" constant="20" id="kfF-eH-lWy"/>
-                            <constraint firstItem="Wz2-Hs-G62" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="65/100" id="qH2-Bn-b9F"/>
+                            <constraint firstItem="Wz2-Hs-G62" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="75/100" id="qH2-Bn-b9F"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yJn-wt-GPy" secondAttribute="trailing" constant="20" id="zYp-3q-mpF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
