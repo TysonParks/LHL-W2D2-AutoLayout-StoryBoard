@@ -28,10 +28,36 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJn-wt-GPy" userLabel="redBox">
                                 <rect key="frame" x="211" y="40" width="144" height="46"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Tn-fX-b8O" userLabel="orangeBoxOne">
+                                        <rect key="frame" x="8" y="8" width="70" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="MLu-GP-wCe"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="dnM-Lk-2bX"/>
+                                            <constraint firstAttribute="width" constant="70" id="hXO-Z6-f5M"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9IN-m6-S1U" userLabel="orangeBoxTwo">
+                                        <rect key="frame" x="86" y="8" width="50" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="BMG-fJ-vEO"/>
+                                            <constraint firstAttribute="width" constant="50" id="Nhm-hW-DyO"/>
+                                            <constraint firstAttribute="height" constant="30" id="ssK-9y-s1s"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="9IN-m6-S1U" firstAttribute="top" secondItem="yJn-wt-GPy" secondAttribute="top" constant="8" id="3BT-wj-Yet"/>
                                     <constraint firstAttribute="width" constant="144" id="6xq-8T-Xjv"/>
                                     <constraint firstAttribute="height" constant="46" id="GDC-Mr-XCM"/>
+                                    <constraint firstItem="9Tn-fX-b8O" firstAttribute="top" secondItem="yJn-wt-GPy" secondAttribute="top" constant="8" id="Lb3-5q-KgZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="9IN-m6-S1U" secondAttribute="trailing" constant="8" id="d0i-fv-efc"/>
+                                    <constraint firstItem="9Tn-fX-b8O" firstAttribute="leading" secondItem="yJn-wt-GPy" secondAttribute="leading" constant="8" id="ezY-ja-BlB"/>
+                                    <constraint firstAttribute="bottom" secondItem="9IN-m6-S1U" secondAttribute="bottom" constant="8" id="ku2-gS-6zG"/>
+                                    <constraint firstAttribute="bottom" secondItem="9Tn-fX-b8O" secondAttribute="bottom" constant="8" id="uYF-hi-TRJ"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -49,6 +75,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
     </scenes>
 </document>
