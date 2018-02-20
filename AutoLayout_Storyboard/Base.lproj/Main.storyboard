@@ -26,13 +26,23 @@
                                     <constraint firstAttribute="height" constant="50" id="wYE-Xr-G85"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yJn-wt-GPy" userLabel="redBox">
+                                <rect key="frame" x="211" y="40" width="144" height="46"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="144" id="6xq-8T-Xjv"/>
+                                    <constraint firstAttribute="height" constant="46" id="GDC-Mr-XCM"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="zcF-Gh-ha1" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="305/600" id="6Gw-6I-ghz"/>
+                            <constraint firstItem="yJn-wt-GPy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="BTX-94-jMh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zcF-Gh-ha1" secondAttribute="bottom" constant="20" id="Zo9-1W-jkD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zcF-Gh-ha1" secondAttribute="trailing" constant="20" id="cfG-I6-oel"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zcF-Gh-ha1" secondAttribute="bottom" constant="20" id="kfF-eH-lWy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yJn-wt-GPy" secondAttribute="trailing" constant="20" id="zYp-3q-mpF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
